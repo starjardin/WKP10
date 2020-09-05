@@ -100,3 +100,75 @@ tr.even {
 tr:hover {
 	background-color: #ff8e3c15;
 }
+
+
+.formPopup{
+	background: hsla(0, 0%, 30%, 0.5);
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	transition: all 0.25s;
+	top: 0;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	--opacity: 0;
+	opacity: var(--opacity);
+}
+
+.formPopup fieldset {
+	background: var(--grey);
+	padding: 2rem;
+	border: 3px solid var(--pink);
+	border-radius: 5px;
+	box-shadow: var(--box-shadow);
+	transition: all 0.2s;
+	--scale: 0.3;
+	transform: scale(var(--scale));
+}
+
+.formPopup.open {
+	--opacity: 1;
+	pointer-events: all;
+}
+
+label {
+  display: block;
+  padding: 1rem;
+}
+
+input {
+  display: block;
+  padding: 1rem;
+}
+
+.deletePopup {
+  opacity: 0;
+}
+
+.deletePopup.open {
+  opacity: 1;
+  width: 200px;
+  height: 150px;
+  background-color: #aaaaaa;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+[type="submit"],
+.cancel,
+.skip,
+.save {
+  padding: 2rem;
+  margin: 2rem;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+
+form {
+  padding-inline-start: 2rem;
+}
