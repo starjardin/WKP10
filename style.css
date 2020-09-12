@@ -102,7 +102,7 @@ tr:hover {
 }
 
 
-.formPopup{
+.formPopup {
 	background: hsla(0, 0%, 30%, 0.5);
 	position: absolute;
 	height: 100vh;
@@ -124,7 +124,7 @@ tr:hover {
 	border-radius: 5px;
 	box-shadow: var(--box-shadow);
 	transition: all 0.2s;
-	--scale: 0.3;
+	/* --scale: 0.3; */
 	transform: scale(var(--scale));
 }
 
@@ -135,7 +135,6 @@ tr:hover {
 
 label {
   display: block;
-  padding: 1rem;
 }
 
 input {
@@ -162,13 +161,10 @@ input {
 .cancel,
 .skip,
 .save {
-  padding: 2rem;
-  margin: 2rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
   background-color: blue;
   color: white;
   border-radius: 5px;
-}
-
-form {
-  padding-inline-start: 2rem;
 }
